@@ -27,19 +27,19 @@ export default function RootLayout({
   return (
     <html lang="en">
   <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-    <SidebarProvider>
+    {/* <SidebarProvider> */}
       <div className="flex h-screen overflow-hidden">
         {/* Sidebar - fixed width */}
-        <div className="w-64 flex-shrink-0 border-r border-gray-200 bg-white dark:bg-gray-900">
+        {/* <div className="w-64 flex-shrink-0 border-r border-gray-200 bg-white dark:bg-gray-900">
           <AppSidebar />
-        </div>
+        </div> */}
 
         {/* Main Content - takes remaining space */}
         <div className="flex-1 overflow-auto">
           {children}
         </div>
       </div>
-    </SidebarProvider>
+    {/* </SidebarProvider> */}
   </body>
 </html>
   );
