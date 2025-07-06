@@ -4,6 +4,12 @@ import { google } from "@ai-sdk/google";
 import { db } from "@/firebase/admin";
 import { getRandomInterviewCover } from "@/lib/utils";
 
+import { NextResponse } from 'next/server';
+
+export async function GET() {
+  return NextResponse.json({ success: true });
+}
+
 export async function POST(request: Request) {
   const { type, role, level, techstack, amount, userid } = await request.json(); //from our request that we sen , we take destructure all these
 
